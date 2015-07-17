@@ -10,7 +10,7 @@ makeCacheMatrix <- function(m = matrix()) {
   }
   ## return the matrix m
   get <- function() m
-  ## set the cache inv equal to the inverse of the matrix with the solve function nested into a parameterized function 
+  ## set the cache inv assigned to the inverse of the matrix with the << operator thanks to the solve built-in function
   setInverse <- function(solve) inv <<- solve
   ## return the cached inverse of m
   getInverse <- function() inv
